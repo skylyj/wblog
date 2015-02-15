@@ -10,7 +10,7 @@ gem 'sass-rails', '~> 4.0.4'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'
-gem 'foundation-rails', '~> 5.4'
+gem 'foundation-rails', '5.1.1.0'
 gem 'foundation-icons-sass-rails'
 gem 'font-awesome-sass'
 
@@ -59,3 +59,8 @@ group :test, :development do
   gem 'pry-nav'
   gem 'factory_girl_rails'
 end
+
+#tommy add
+gem 'execjs'
+gem 'therubyracer', :platforms => :ruby
+

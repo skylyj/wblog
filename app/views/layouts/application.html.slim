@@ -11,6 +11,10 @@ html
     link href="/favicon.png" type='image/png' rel="icon"
     = javascript_include_tag "vendor/modernizr"
     = javascript_include_tag "application"
+    = javascript_include_tag "http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+    = csrf_meta_tags
+    script[type="text/x-mathjax-config"]
+      | MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
     = csrf_meta_tags
   body
     - if content_for?(:main)
